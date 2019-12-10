@@ -9,6 +9,7 @@ import android.view.View;
 import android.widget.Button;
 
 import com.softwarica.androidsecondassignment.Fragments.AreaofCircle;
+import com.softwarica.androidsecondassignment.Fragments.Palindrome;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -47,9 +48,17 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.btnAreaofCircle:
 
                 AreaofCircle areaofCircle = new AreaofCircle();
-                fragmentTransaction.replace(R.id.fragmentContainer,areaofCircle);
+                fragmentTransaction.replace(R.id.fragmentContainer, areaofCircle);
                 fragmentTransaction.commit();
                 break;
+
+            case R.id.btnPalindrome:
+
+                Palindrome palindrome = new Palindrome();
+                fragmentTransaction.replace(R.id.fragmentContainer, palindrome);
+                fragmentTransaction.commit();
+                break;
+
         }
 
 

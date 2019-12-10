@@ -9,7 +9,9 @@ import android.view.View;
 import android.widget.Button;
 
 import com.softwarica.androidsecondassignment.Fragments.AreaofCircle;
+import com.softwarica.androidsecondassignment.Fragments.Armstrong;
 import com.softwarica.androidsecondassignment.Fragments.Palindrome;
+import com.softwarica.androidsecondassignment.Fragments.SimpleInterest;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -61,8 +63,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
             case R.id.btnSimpleInterest:
 
-                com.softwarica.secondassignment.Fragments.SimpleInterest simpleInterest = new com.softwarica.secondassignment.Fragments.SimpleInterest();
+                SimpleInterest simpleInterest = new SimpleInterest();
                 fragmentTransaction.replace(R.id.fragmentContainer,simpleInterest);
+                fragmentTransaction.commit();
+                break;
+
+            case R.id.btnArmstrong:
+
+                Armstrong armstrong = new Armstrong();
+                fragmentTransaction.replace(R.id.fragmentContainer,armstrong);
                 fragmentTransaction.commit();
                 break;
 

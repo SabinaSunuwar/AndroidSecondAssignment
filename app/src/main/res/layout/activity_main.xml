@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <Button
+        android:id="@+id/btnAreaofCircle"
+        android:layout_width="167dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="36dp"
+        android:text="Area of Circle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.065"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnPalindrome"
+        android:layout_width="164dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="36dp"
+        android:text="Palindrome"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintStart_toEndOf="@+id/btnAreaofCircle"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnSimpleInterest"
+        android:layout_width="167dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="36dp"
+        android:text="Simple Interest"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAreaofCircle" />
+
+    <Button
+        android:id="@+id/btnArmstrong"
+        android:layout_width="163dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="36dp"
+        android:text="Armstrong"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.721"
+        app:layout_constraintStart_toEndOf="@+id/btnSimpleInterest"
+        app:layout_constraintTop_toBottomOf="@+id/btnPalindrome" />
+
+    <Button
+        android:id="@+id/btnAutomorphic"
+        android:layout_width="170dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="24dp"
+        android:text="Automorphic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.082"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSimpleInterest" />
+
+    <Button
+        android:id="@+id/btnSwapping"
+        android:layout_width="162dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="24dp"
+        android:text="Swapping"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.052"
+        app:layout_constraintStart_toEndOf="@+id/btnAutomorphic"
+        app:layout_constraintTop_toBottomOf="@+id/btnArmstrong" />
+
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="450dp"
+        android:layout_marginTop="308dp"
+        android:orientation="vertical"
+        android:id="@+id/fragmentContainer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

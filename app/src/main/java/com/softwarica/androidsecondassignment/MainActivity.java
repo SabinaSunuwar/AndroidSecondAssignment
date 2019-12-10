@@ -59,6 +59,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 fragmentTransaction.commit();
                 break;
 
+            case R.id.btnSimpleInterest:
+
+                com.softwarica.secondassignment.Fragments.SimpleInterest simpleInterest = new com.softwarica.secondassignment.Fragments.SimpleInterest();
+                fragmentTransaction.replace(R.id.fragmentContainer,simpleInterest);
+                fragmentTransaction.commit();
+                break;
+
         }
 
 

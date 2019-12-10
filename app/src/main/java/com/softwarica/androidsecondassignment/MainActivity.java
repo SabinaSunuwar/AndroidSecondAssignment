@@ -13,6 +13,7 @@ import com.softwarica.androidsecondassignment.Fragments.Armstrong;
 import com.softwarica.androidsecondassignment.Fragments.Automorphic;
 import com.softwarica.androidsecondassignment.Fragments.Palindrome;
 import com.softwarica.androidsecondassignment.Fragments.SimpleInterest;
+import com.softwarica.androidsecondassignment.Fragments.Swapping;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -80,6 +81,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
                 Automorphic automorphic = new Automorphic();
                 fragmentTransaction.replace(R.id.fragmentContainer,automorphic);
+                fragmentTransaction.commit();
+                break;
+
+            case R.id.btnSwapping:
+
+                Swapping swapping = new Swapping();
+                fragmentTransaction.replace(R.id.fragmentContainer,swapping);
                 fragmentTransaction.commit();
                 break;
 

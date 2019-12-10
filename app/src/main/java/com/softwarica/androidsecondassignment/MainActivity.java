@@ -10,6 +10,7 @@ import android.widget.Button;
 
 import com.softwarica.androidsecondassignment.Fragments.AreaofCircle;
 import com.softwarica.androidsecondassignment.Fragments.Armstrong;
+import com.softwarica.androidsecondassignment.Fragments.Automorphic;
 import com.softwarica.androidsecondassignment.Fragments.Palindrome;
 import com.softwarica.androidsecondassignment.Fragments.SimpleInterest;
 
@@ -72,6 +73,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
                 Armstrong armstrong = new Armstrong();
                 fragmentTransaction.replace(R.id.fragmentContainer,armstrong);
+                fragmentTransaction.commit();
+                break;
+
+            case R.id.btnAutomorphic:
+
+                Automorphic automorphic = new Automorphic();
+                fragmentTransaction.replace(R.id.fragmentContainer,automorphic);
                 fragmentTransaction.commit();
                 break;
 

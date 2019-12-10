@@ -5,31 +5,23 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#BF76E7"
+    android:textSize="18sp"
     android:orientation="vertical"
     tools:context=".MainActivity">
-
 
     <Button
         android:id="@+id/btnAreaofCircle"
         android:layout_width="167dp"
         android:layout_height="61dp"
-        android:layout_marginTop="36dp"
+        android:layout_marginTop="76dp"
+        android:background="#fff"
         android:text="Area of Circle"
+        android:textColor="#9E49D1"
+        android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.065"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/btnPalindrome"
-        android:layout_width="164dp"
-        android:layout_height="61dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="36dp"
-        android:text="Palindrome"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.666"
-        app:layout_constraintStart_toEndOf="@+id/btnAreaofCircle"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
@@ -37,7 +29,10 @@
         android:layout_width="167dp"
         android:layout_height="57dp"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="36dp"
+        android:layout_marginTop="28dp"
+        android:textColor="#9E49D1"
+        android:background="#fff"
+        android:textSize="18sp"
         android:text="Simple Interest"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -45,47 +40,90 @@
         app:layout_constraintTop_toBottomOf="@+id/btnAreaofCircle" />
 
     <Button
-        android:id="@+id/btnArmstrong"
-        android:layout_width="163dp"
-        android:layout_height="54dp"
-        android:layout_marginTop="36dp"
-        android:text="Armstrong"
+        android:id="@+id/btnAutomorphic"
+        android:layout_width="170dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="28dp"
+        android:background="#fff"
+        android:text="Automorphic"
+        android:textColor="#9E49D1"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/fragmentContainer"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.721"
+        app:layout_constraintHorizontal_bias="0.082"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSimpleInterest"
+        app:layout_constraintVertical_bias="0.173" />
+
+    <Button
+        android:id="@+id/btnSwapping"
+        android:layout_width="161dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="28dp"
+        android:background="#fff"
+        android:text="Swapping"
+        android:textColor="#9E49D1"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/fragmentContainer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/btnAutomorphic"
+        app:layout_constraintTop_toBottomOf="@+id/btnArmstrong"
+        app:layout_constraintVertical_bias="0.095" />
+
+    <Button
+        android:id="@+id/btnArmstrong"
+        android:layout_width="158dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="28dp"
+        android:background="#fff"
+        android:text="Armstrong"
+        android:textColor="#9E49D1"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.666"
         app:layout_constraintStart_toEndOf="@+id/btnSimpleInterest"
         app:layout_constraintTop_toBottomOf="@+id/btnPalindrome" />
 
     <Button
-        android:id="@+id/btnAutomorphic"
-        android:layout_width="170dp"
-        android:layout_height="65dp"
-        android:layout_marginTop="24dp"
-        android:text="Automorphic"
+        android:id="@+id/btnPalindrome"
+        android:layout_width="164dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="76dp"
+        android:background="#fff"
+        android:text="Palindrome"
+        android:textColor="#9E49D1"
+        android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.082"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnSimpleInterest" />
+        app:layout_constraintHorizontal_bias="0.625"
+        app:layout_constraintStart_toEndOf="@+id/btnAreaofCircle"
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/btnSwapping"
-        android:layout_width="162dp"
-        android:layout_height="66dp"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="24dp"
-        android:text="Swapping"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.052"
-        app:layout_constraintStart_toEndOf="@+id/btnAutomorphic"
-        app:layout_constraintTop_toBottomOf="@+id/btnArmstrong" />
 
     <LinearLayout
-        android:layout_width="409dp"
-        android:layout_height="450dp"
-        android:layout_marginTop="308dp"
-        android:orientation="vertical"
         android:id="@+id/fragmentContainer"
+        android:layout_width="414dp"
+        android:layout_height="391dp"
+        android:layout_marginTop="332dp"
+        android:background="#A432E2"
+        android:orientation="vertical"
+        android:textColor="#fff"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"></LinearLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="42dp"
+        android:layout_marginTop="12dp"
+        android:text="Basic Programs"
+        android:textColor="#ffffff"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

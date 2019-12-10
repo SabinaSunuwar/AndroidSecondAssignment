@@ -10,6 +10,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.softwarica.androidsecondassignment.R;
@@ -21,6 +22,7 @@ public class AreaofCircle extends Fragment implements View.OnClickListener {
 
     private Button btnAreaofCircle;
     private EditText etRadius;
+    private TextView tvResult;
 
 
     public AreaofCircle() {
@@ -36,6 +38,7 @@ public class AreaofCircle extends Fragment implements View.OnClickListener {
 
         etRadius = view.findViewById(R.id.etRadius);
         btnAreaofCircle = view.findViewById(R.id.btnAreaofCircle);
+        tvResult = view.findViewById(R.id.tvResult);
 
         btnAreaofCircle.setOnClickListener(this);
         return view;
@@ -47,7 +50,7 @@ public class AreaofCircle extends Fragment implements View.OnClickListener {
         float radius = Integer.parseInt(etRadius.getText().toString());
         float area = 3.14f * radius * radius;
 
-        Toast.makeText(getActivity(),"Area of Circle" + area, Toast.LENGTH_SHORT).show();
+        tvResult.setText("Area of Circle is " + area);
 
     }
 }

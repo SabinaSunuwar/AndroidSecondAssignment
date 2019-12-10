@@ -12,17 +12,35 @@
         android:layout_height="wrap_content"
         android:hint="Enter Radius"
         android:textSize="20sp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
         android:inputType="number"
-        android:textColor="#000"
+        android:textColorHint="#fff"
+        android:textColor="#fff"
         android:id="@+id/etRadius"/>
 
 
     <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="264dp"
+        android:layout_height="61dp"
+        android:layout_gravity="center"
         android:text="Calculate"
+        android:textColor="#9E49D1"
+        android:background="#fff"
         android:textSize="20sp"
         android:id="@+id/btnAreaofCircle"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:textColor="#fff"
+        android:id="@+id/tvResult"/>
+
 
 
 </LinearLayout>
